@@ -1,0 +1,56 @@
+.footer {
+    background-color: rgb(128, 128, 128);
+    margin-top: 10px;
+    width: 100%-10px;
+    height: 50px;
+    border-radius: 10px;
+    padding-top: 10px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#fnav {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease 0s;
+}
+
+.container11 {
+    height: 100%;
+    width: 100%-10px;
+    display: block;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px;
+}
+
+.mainimage {
+    width: 100%;
+    height: 750px;
+    border-radius: 10px;
+    background-image: url("src/assets/Lib.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.theimage {
+    border-radius: 10px;
+    width: 100%;
+    height: 750px;
+    background-color: rgba(0, 0, 0, 0.445);
+    align-content: center;
+}
+
+.imagetext {
+    color: white;
+    width: 100%;
+    padding-top: 300px;
+    font-size: 26px;
+    text-align: center;
+}

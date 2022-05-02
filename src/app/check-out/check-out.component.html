@@ -1,0 +1,55 @@
+<app-topnavc></app-topnavc>
+<div class="container">
+    <div class="header">
+        Check Out Books
+
+
+    </div>
+
+    <div class="row">
+        <div id="filt" class="col-md-2">Filter Author By:</div>
+        <div class="col-md-4">
+            <input type='text' [(ngModel)]="listfilter">
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-hover" *ngIf="books.length">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Authors</th>
+                    <th>Rating</th>
+                    <th>Publish Date</th>
+                    <th>Language</th>
+                    <th>Publisher</th>
+
+
+
+
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let books of filteredbooks">
+                    <td>{{books.title}}</td>
+                    <td>{{books.authors}}</td>
+                    <td>{{books.average_rating}}</td>
+                    <td>{{books.publication_date}}</td>
+                    <td>{{books.language_code}}</td>
+                    <td>{{books.publisher}}</td>
+                </tr>
+
+
+
+            </tbody>
+        </table>
+    </div>
+    <h5>Check-Out Selected Books: </h5><button routerLink="/checkin" type="button" class="btn btn-secondary">Check-Out</button>
+
+</div>
+<div class="footer">
+    <a routerLink="/customerconsole" id="fnav">Home </a>
+
+
+</div>

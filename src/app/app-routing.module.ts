@@ -1,8 +1,11 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { AdminconsoleComponent } from './adminconsole/adminconsole.component';
 import { BooksComponent } from './books/books.component';
+import { CheckInComponent } from './check-in/check-in.component';
+import { CheckOutComponent } from './check-out/check-out.component';
+import { CheckincComponent } from './checkinc/checkinc.component';
 import { CustomerconsoleComponent } from './customerconsole/customerconsole.component';
 import { FrontpageComponent } from './frontpage/frontpage.component';
 import { LocationComponent } from './location/location.component';
@@ -36,6 +39,18 @@ const routes: Routes = [
 {
   path: 'adminconsole',
   component: AdminconsoleComponent
+},
+{
+  path: 'checkin',
+  component: CheckInComponent
+},
+{
+  path: 'checkout',
+  component: CheckOutComponent
+},
+{
+  path: 'checkinc',
+  component: CheckincComponent
 }
 ];
 

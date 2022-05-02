@@ -15,6 +15,10 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { FooterComponent } from './footer/footer.component';
 import { CustomerconsoleComponent } from './customerconsole/customerconsole.component';
 import { FormsModule } from '@angular/forms';
+import { TopnavcComponent } from './topnavc/topnavc.component';
+import { CheckInComponent } from './check-in/check-in.component';
+import { CheckOutComponent } from './check-out/check-out.component';
+import { CheckincComponent } from './checkinc/checkinc.component';
 
 
 
@@ -28,7 +32,11 @@ import { FormsModule } from '@angular/forms';
     AboutComponent,
     LoginComponent,
     FooterComponent,
-    CustomerconsoleComponent
+    CustomerconsoleComponent,
+    TopnavcComponent,
+    CheckInComponent,
+    CheckOutComponent,
+    CheckincComponent
   ],
   imports: [
     BrowserModule,
