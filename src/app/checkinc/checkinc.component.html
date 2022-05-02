@@ -1,15 +1,11 @@
 <app-topnavc></app-topnavc>
 <div class="container">
-    <div class="header">
-        Current Books Checked Out
-
-
-    </div>
+    <div class="header">Current Books Checked Out</div>
 
     <div class="row">
         <div id="filt" class="col-md-2">Filter Author By:</div>
         <div class="col-md-4">
-            <input type='text' [(ngModel)]="listfilter">
+            <input type="text" [(ngModel)]="listfilter" />
         </div>
     </div>
 
@@ -20,27 +16,22 @@
                     <th>Title</th>
                     <th>Authors</th>
                     <th>Date Checked Out</th>
-
                 </tr>
             </thead>
             <tbody>
                 <tr *ngFor="let books of filteredbooks">
-                    <td>{{books.title}}</td>
-                    <td>{{books.authors}}</td>
-                    <td>{{books.check_out_date}}</td>
-
+                    <td>{{ books.title }}</td>
+                    <td>{{ books.authors }}</td>
+                    <td>{{ books.check_out_date }}</td>
                 </tr>
-
-
-
             </tbody>
         </table>
     </div>
-    <h5>Check-In Selected Books: </h5><button routerLink="/checkin" type="button" class="btn btn-secondary">Check-In</button>
-
+    <h5>Check-In Selected Books:</h5>
+    <button routerLink="/checkin" type="button" class="btn btn-secondary">
+    Check-In
+  </button>
 </div>
 <div class="footer">
     <a routerLink="/customerconsole" id="fnav">Home </a>
-
-
 </div>

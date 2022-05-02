@@ -2,14 +2,12 @@
 <div class="container">
     <div class="header">
         Books at the Library
-
-
     </div>
 
     <div class="row">
         <div id="filt" class="col-md-2">Filter Author By:</div>
         <div class="col-md-4">
-            <input type='text' [(ngModel)]="listfilter">
+            <input type="text" [(ngModel)]="listfilter" />
         </div>
     </div>
 
@@ -23,11 +21,6 @@
                     <th>Publish Date</th>
                     <th>Language</th>
                     <th>Publisher</th>
-
-
-
-
-
                 </tr>
             </thead>
             <tbody>
@@ -39,16 +32,10 @@
                     <td>{{books.language_code}}</td>
                     <td>{{books.publisher}}</td>
                 </tr>
-
-
-
             </tbody>
         </table>
     </div>
-
 </div>
 <div class="footer">
     <a routerLink="/" id="fnav">Home </a>
-
-
 </div>
